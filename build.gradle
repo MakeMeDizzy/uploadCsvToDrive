@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'DriveQuickstart'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.api-client:google-api-client:1.23.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
+    compile 'com.google.apis:google-api-services-drive:v3-rev110-1.23.0'
+    compile group: 'com.google.apis', name: 'google-api-services-oauth2', version: 'v2-rev157-1.25.0'
+    compile group: 'com.google.apis', name: 'google-api-services-sqladmin', version: 'v1beta4-rev76-1.25.0'
+    compile group: 'com.sun.mail', name: 'javax.mail', version: '1.6.2'
+    compile group: 'com.zaxxer', name: 'HikariCP', version: '3.4.1'
+    compile group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '8.3.0.jre14-preview'
+
+}
